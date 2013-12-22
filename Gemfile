@@ -23,6 +23,13 @@ end
 
 gem 'jquery-rails', '2.0.2'
 
+group :production do
+    gem 'pg', '0.12.2'
+end
+
+# To avoid a warning for deploying to Heroku
+gem 'rails_12factor'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
