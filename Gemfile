@@ -27,8 +27,7 @@ group :production do
     gem 'pg', '0.12.2'
 end
 
-# To avoid a warning for deploying to Heroku
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
